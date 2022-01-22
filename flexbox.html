@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        .container {
+            height: 500px;
+            border: 2px dotted slategray;
+            display: flex;
+
+        }
+
+        .box {
+            width: 200px;
+
+            border: 3px dashed rebeccapurple;
+            /* font-size: 3em; */
+        }
+
+        #box-2 {
+            flex-grow: 1;
+            order: 1;
+        }
+
+        #box-1 {
+            order: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>I am flexible right now</h1>
+    <div class="container">
+        <div id="box-1" class="box">BOX-1</div>
+        <div id="box-2" class="box">
+            <h3>BOX-2</h3>
+            <article class="blog">
+                <h4>blog-1</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga necessitatibus ut? Consequatur
+                    praesentium ullam cupiditate culpa provident ad quisquam laborum, dicta nisi eveniet id vitae
+                    soluta. Optio, adipisci nostrum.</p>
+            </article>
+            <article class="blog">
+                <h4>blog-2</h4>
+                <p>Nisi dignissimos earum quisquam repudiandae suscipit dolores ab sapiente maiores neque, magnam
+                    asperiores tempore similique eaque quas nemo a molestias reprehenderit beatae iure? Error maiores
+                    voluptates aliquid dolorem atque incidunt?</p>
+            </article>
+            <article class="blog">
+                <h4>blog-3</h4>
+                <p>Laudantium, eos ipsa tempora eligendi quod commodi sit vitae? Aspernatur porro aliquid ratione nemo
+                    ad molestias nesciunt saepe optio asperiores nobis sequi accusamus odit omnis, odio repellendus
+                    adipisci fugiat debitis!</p>
+            </article>
+        </div>
+
+    </div>
+</body>
+
+</html>
